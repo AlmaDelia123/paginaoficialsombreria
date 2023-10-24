@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+}
+
+.wrapper ul li {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid white;
+    float: left;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li .fa {
+    color: white;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover.facebook{
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-facebook{
+    color: #ffffff;
+    text-shadow: 0 0 15px #ffffff;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover.twitter{
+    border: 5px solid #00aced;
+    box-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-twitter{
+    color: #ffffff;
+    text-shadow: 0 0 15px #ffffff;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover.instagram{
+    border: 5px solid #cf1ab7;
+    box-shadow: 0 0 15px #e41274;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-instagram{
+    color: #ffffff;
+    text-shadow: 0 0 15px #ffffff;
+    transition: all 0.5s ease;
+}
+.wrapper ul li:hover.google{
+    border: 5px solid #da0f0f;
+    box-shadow: 0 0 15px #da0f0f;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-google{
+    color: #ffffff;
+    text-shadow: 0 0 15px #ffffff;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover.whatsapp{
+    border: 5px solid #01f03d;
+    box-shadow: 0 0 15px #01f03d;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-whatsapp{
+    color: #ffffff;
+    text-shadow: 0 0 15px #ffffff;
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 640px){
+    .wrapper{
+        width: 350px;
+    }
+    .wrapper ul li{
+        margin-top: 10px;
+    }
+    .wrapper ul li.google{
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .wrapper{
+        width: 150px;
+    }
+    .wrapper ul li{
+        margin: 15px;
+    }
+    .wrapper ul li.google{
+        margin-left: 15px;
+    }
+}
